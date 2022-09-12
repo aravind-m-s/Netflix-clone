@@ -1,0 +1,315 @@
+body{
+    background-color: #333;
+    overflow-x: hidden;   
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+p{
+    color: white;
+    font-size: 18px;
+}
+
+.email{
+    padding-left: 25%;
+    display: flex;
+}
+
+input{
+    width: 450px;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border-width: 0px;
+    
+}
+button{
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: red;
+    border-width: 0px;
+    color: white;
+    
+}
+
+hr{
+    border-top: 5px  solid #333;
+}
+
+.main{
+    padding-top: 10px ;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8),transparent,rgba(0,0,0,0.8)),url("assets/backdrop.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.main nav{
+    position: absolute;
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+.main nav img{
+    /* padding-top: -20px; */
+    padding-left: 20px;
+    object-fit: comtain;
+    height: 40px;
+    width:  180px;
+}
+
+.main nav select{
+    height: 38px;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    right: 180px;    
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    border-color: white;
+}
+
+.main nav a{
+    padding-top: 8px;
+    height: 30px;
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    right: 60px;
+    text-decoration: none;
+    color: white;
+    background-color: #e50914;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.main #first{
+    padding-top: 15%;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.main #second{
+    font-size: 25px;
+    font-weight: 100;
+}   
+
+.tv{
+    padding-left: 6%;
+    vertical-align: middle;
+    display: flex;
+    margin-top: -15px;
+    height: 75vh;
+    background-color: black;
+    color: white;
+}
+
+.tv .left .first{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.tv .left .second{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.tv .right{
+    padding-left: 100px;
+}
+
+
+
+.download{
+    padding-left: 6%;
+    vertical-align: middle;
+    display: flex;
+    margin-top: -15px;
+    height: 75vh;
+    background-color: black;
+    color: white;
+}
+
+.download .right .first{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.download .right .second{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.download .right{
+    padding-left: 200px;
+}
+
+.download .left img{
+    padding-left: 30px;
+    padding-top: 70px;
+    width: 325px;
+}
+
+.watch{
+    padding-left: 6%;
+    vertical-align: middle;
+    display: flex;
+    margin-top: -15px;
+    height: 75vh;
+    background-color: black;
+    color: white;
+}
+
+.watch .left .first{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.watch .left .second{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.watch .right img{
+    width: 500px;
+}
+
+.watch .right{
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+.children{
+    padding-left: 6%;
+    vertical-align: middle;
+    display: flex;
+    margin-top: -15px;
+    height: 75vh;
+    background-color: black;
+    color: white;
+}
+
+.children .right .first{
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.children .right .second{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.children .right{
+    padding-left: 100px;
+}
+
+.children .left img{
+    padding-left: 30px;
+    padding-top: 70px;
+    width: 425px;
+}
+
+.mainfaq{
+    margin-top: -15px;
+    padding: 10px;
+    background-color: black;
+}
+
+.faq{
+    padding-left: 220px;
+}
+
+.faq .questions{
+    padding-top: 30px;
+    padding-left: 30px;
+    height: 50px;
+    width: 60vw;
+    color: white;
+    background-color: #303030;
+    margin-bottom: 10px;
+}
+
+#faq{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.mainfaq p{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.mainfaq .email{
+    padding-bottom: 50px;
+}
+
+.footer{
+    padding: 80px 120px;
+    margin: -15px;
+    background-color: black;
+}
+
+.footer .call{
+    padding-left:50px;
+    padding-bottom:20px ;
+    font-size: 14px;
+    color: #737373;
+}
+
+.footer .call a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.footer table a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #737373;    
+}
+
+.footer table td{
+   padding: 10px 50px;
+}
+
+.footer .lang{
+    padding: 20px 50px;
+}
+
+.footer select{
+    height: 38px;
+    width: 100px;
+    text-align: center;   
+    background-color: transparent;
+    color: #737373;
+    border-radius: 3px;
+    border-color: #737373;
+    
+}
+.footer option{
+    background-color: black;
+}
+
+.footer p{
+    padding-left: 50px;
+    font-size: 14px;
+    color: #737373;
+}
