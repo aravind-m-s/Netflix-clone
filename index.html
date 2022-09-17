@@ -4,128 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETFLIX</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;900&display=swap" rel="stylesheet">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logo.png">
 </head>
-
 <body>
-    <div class="main">
+    <div class="main-body">
         <nav>
             <img src="assets/Netflix-Brand-Logo.png" alt="">
-            <select>
-                <option>English</option>
-                <option>Hindi</option>
-            </select>
-            <a href="">Sign In</a>
+            <div class="right">
+                <div class="language-selector">
+                    <div class="globe-icon">
+                        <img src="assets/language.png" alt="">
+                    </div>
+                    <select name="language" id="lang">
+                        <option value="English">English</option>
+                        <option value="हिन्दी">हिन्दी</option>
+                    </select>
+                </div>
+                <div class="sign-in">
+                    <button>Sign In</button>
+                </div>
+            </div>
         </nav>
-        <div>
-            <h1 id="first">Unlimited movies, TV<br> shows and more.</h1>
-            <h1 id="second">Watch anywhere. Cancel anytime.</h1>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-        </div>
-        <div class="email">
-            <div><input type = "email" placeholder="Email address"></div>
-            <div><button>Get started ></button></div>
-        </div>
-
-    </div>
-    <hr>
-    <div class="tv">
-       <div class="left">
-            <h1 class="first">Enjoy on your TV.</h1>
-            <h1 class="second">Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players and<br> more.</h1>
-        </div>
-        <div class="right">
-            <img src="assets/tv design.png" alt="">
-
+        <div class="center-content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <div class="email-input">
+                <h3 class="h3">Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div class="email">
+                    <input type="Email" placeholder="Email address">
+                    <button class="btn">Get Started ></button>
+                </div>
+            </div>
         </div>
     </div>
-    <hr>
-    <div class="download">
+    <div class="watch-on-tv">
         <div class="left">
-            <img src="assets/download.png" alt="">
+            <h1>Enjoy on your TV.</h1>
+            <h2>Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players and<br> more.</h2>
         </div>
         <div class="right">
-             <h1 class="first">Download your shows<br> to watch offline..</h1>
-             <h1 class="second">Save your favourites easily and always have<br>something to watch.</h1>
-         </div>
-     </div>
-     <hr>
-     <div class="watch">
+            <div class="video">
+                <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" autoplay loop></video>
+            </div>
+            <div class="tv-screen">
+                <img src="assets/tv design.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="download-screen">
         <div class="left">
-             <h1 class="first">Watch everywhere.</h1>
-             <h1 class="second">Stream unlimited movies and TV shows on<br> your phone, tablet, laptop, and TV.</h1>
-         </div>
-         <div class="right">
-             <img src="assets/watch.png" alt="">
-         </div>
-     </div>
-     <hr>
-     <div class="children">
+            <div class="phone-image">
+                <img src="assets/phone.jpg" alt="" id="phone">
+                <div class="download">
+                    <img src="assets/boxshot.png" alt="" id="img">
+                    <div class="content">
+                        <span>Stranger Things</span>
+                        <a>Downloading...</a>
+                    </div>
+                    <img src="assets/download-icon.gif" alt="" id="gif">
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <h1>Download your shows to watch offline.</h1>
+            <h2>Save your favourites easily and always have something to watch.</h2>
+        </div>
+    </div>
+    <div class="watch-everywhere">
+        <div class="left">
+            <h1>Watch everywhere.</h1>
+            <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h2>
+        </div>
+        <div class="right">
+            <div class="video">
+                <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" autoplay loop></video>
+            </div>
+            <div class="screen">
+                <img src="assets/watch.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="children">
         <div class="left">
             <img src="assets/children.png" alt="">
         </div>
-        <div class="right">
-             <h1 class="first">Create profiles for<br>children.</h1>
-             <h1 class="second">Send children on adventures with their<br> favourite characters in a space made just for<br> them—free with your membership.</h1>
-         </div>
-     </div>
-     <hr>
-     <div class="mainfaq">
-        <h1 id="faq">Frequently Asked Questions</h1>
-        <div class="faq">
-           <div class="questions">What is Netflix?</div>
-           <div class="questions">How much does Netflix cost?</div>
-           <div class="questions">How can I watch</div>
-           <div class="questions">What can I watch on Netflix?</div>
-           <div class="questions">Is Netflix good for kids?</div>
+        <div class="content-right">
+            <h1>Create profiles for children.</h1>
+            <h2>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h2>
         </div>
-        <p>Ready to watch? Enter your email to create or restart your membership.</p>
-        <div class="email">
-           <div><input type = "email" placeholder="Email address"></div>
-           <div><button>Get started ></button></div>
-       </div>
     </div>
-    <hr>
-    <div class="footer">
-        <div class="call">Questions? Call <a href="">000-800-040-1843</a></div>
-        <table >
-        <tr>
-            <td><a href="">FAQ</a></td>
-            <td><a href="">Help center</a></td>
-            <td><a href="">Account</a></td>
-            <td><a href="">Media Center</a></td>
-        </tr>
-        <tr>
-            <td><a href="">Investor Relations</a></td>
-            <td><a href="">Jobs</a></td>
-            <td><a href="">Ways to Watch</a></td>
-            <td><a href="">Terms of Use</a></td>
-        </tr>
-        <tr>
-            <td><a href="">Privacy</a></td>
-            <td><a href="">Cookie Preferences</a></td>
-            <td><a href="">Corporate Information</a></td>
-            <td><a href="">Contact Us</a></td>
-        </tr>
-        <tr>
-            <td><a href="">Speed Test</a></td>
-            <td><a href="">Legal Notices</a></td>
-            <td><a href="">Only on Netflix</a></td>
-        </tr>
-    </table>
-    <div class="lang">
-        <select>
-            <option>English</option>
-            <option>Hindi</option>
-        </select>
+    <div class="end">
+        <h1>Frequently Asked Questions</h1>
+        <div class="button-list">
+            <button class="what-watch">What is Netflix?</button>
+            <button class="netflix-cost">How much does Netflix cost?</button>
+            <button class="where-watch">Where can I watch?</button>
+            <button class="how-cancel">How do I cancel?</button>
+            <button class="what-to-watch">What can I watch on Netflix?</button>
+            <button class="netflix-kids">Is Netflix good for kids?</button>
+        </div>
+        <div class="email-input">
+            <h3 class="h3">Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div class="email">
+                <input type="Email" placeholder="Email address">
+                <button class="btn">Get Started ></button>
+            </div>
+        </div>
     </div>
-    <p>Netflix India</p>
-    </div>
-
+    <footer>
+        <p id="first">Questions? Call <a>000-800-040-1843</a></p>
+        <table>
+            <tr>
+                <td><a>FAQ</a></td>
+                <td><a>Help Center</a></td>
+                <td><a>Account</a></td>
+                <td><a>Media Center</a></td>
+            </tr>
+            <tr>
+                <td><a>Investor Relations</a></td>
+                <td><a>Jobs</a></td>
+                <td><a>Ways to Watch</a></td>
+                <td><a>Terms of Use</a></td>
+            </tr>
+            <tr>
+                <td><a>Privacy</a></td>
+                <td><a>Cookie Preferences</a></td>
+                <td><a>Coporate Information</a></td>
+                <td><a>Contact Us</a></td>
+            </tr>
+            <tr>
+                <td><a>Speed Test</a></td>
+                <td><a>Legal Notices</a></td>
+                <td><a>Only on Netflix</a></td>
+            </tr>
+        </table>
+        <div class="language-selector-footer">
+            <div class="globe-icon">
+                <img src="assets/language.png" alt="">
+            </div>
+            <select name="language" id="lang">
+                <option value="English">English</option>
+                <option value="हिन्दी">हिन्दी</option>
+            </select>
+        </div>
+        <p id="last">Netflix India</p>
+    </footer>
 </body>
 </html>
