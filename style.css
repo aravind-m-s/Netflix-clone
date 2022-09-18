@@ -1,315 +1,369 @@
 body{
-    background-color: #333;
-    overflow-x: hidden;   
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
     
 }
 
-p{
-    color: white;
-    font-size: 18px;
+.main-body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.2),rgba(0,0,0,.8)),url("assets/backdrop.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 7px solid #333;
 }
+
+nav{
+    
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+nav img{
+    background-color: transparent;
+    margin-left: 20px;
+    height: 40px;
+    
+}
+
+.language-selector select{
+    color: white;
+    background-color: transparent;
+    height: 36px;
+    width: 85px;
+    border : none;
+    outline: none;
+}
+
+.right{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.language-selector{
+    display: flex;
+    border: 1px solid white;
+    height: 36px;
+    width: 100px;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.language-selector option{
+    background-color: gray;
+}
+
+
+.globe-icon img{
+    margin-left: 10px;
+    filter: invert(100%);
+    height: 20px;
+    background-color: transparent;
+}
+
+.sign-in{
+    background-color: transparent;
+
+}
+
+.sign-in button{
+    font-size: 18px;
+    color: white;
+    border: none;
+    margin-top: -2px;
+    height: 35px;
+    width: 80px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.center-content{
+    margin: auto;
+    text-align: center;
+    width: 950px;
+}
+
+.center-content h1{
+    margin-left: 155px;
+    margin-right: 155px;
+    font-size: 50px;
+}
+
+.center-content h2{
+    font-size: 26px;
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+.h3{
+    font-size: 18px;
+    text-align: center;
+}
+
 
 .email{
-    padding-left: 25%;
     display: flex;
+    justify-content: center;
 }
 
 input{
-    width: 450px;
-    height: 45px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: white;
-    border-width: 0px;
-    
-}
-button{
-    width: 200px;
-    height: 55px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: red;
-    border-width: 0px;
-    color: white;
-    
-}
-
-hr{
-    border-top: 5px  solid #333;
-}
-
-.main{
-    padding-top: 10px ;
-    width: 100vw;
-    height: 100vh;
-    color: white;
-    background: linear-gradient(0deg, rgba(0,0,0,0.8),transparent,rgba(0,0,0,0.8)),url("assets/backdrop.jpg");
-    background-size: cover;
-    text-align: center;
-}
-
-.main nav{
-    position: absolute;
-    display: flex;
-    height: 60px;
-    width: 100vw;
-    padding-top: 25px;
     padding-left: 10px;
+    height: 60px;
+    width: 450px;
 }
 
-.main nav img{
-    /* padding-top: -20px; */
-    padding-left: 20px;
-    object-fit: comtain;
-    height: 40px;
-    width:  180px;
+.btn{
+    font-size: 26px;
+    font-weight:600;
+    background-color:red;
+    color: white;
+    width: 210px;
+    height: 65px;
+    outline: none;
+    border: none;
 }
 
-.main nav select{
-    height: 38px;
-    width: 100px;
-    text-align: center;
+.watch-on-tv {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    border-bottom: 7px solid #333;
+}
+
+.left h1{
+    font-size: 50px;
+}
+
+.watch-on-tv .left{
+    margin-right: 40px;
+    margin-top:100px ;
+}
+
+.watch-on-tv .right{
+    position: relative;
+    margin-right: 20px;
+}
+
+.watch-on-tv .video{
     position: absolute;
-    right: 180px;    
-    background-color: transparent;
-    color: white;
-    border-radius: 3px;
-    border-color: white;
+    right: -13px;
+    top: 82px;
 }
 
-.main nav a{
-    padding-top: 8px;
-    height: 30px;
-    width: 80px;
-    cursor: pointer;
-    text-align: center;
-    position: absolute;
-    right: 60px;
-    text-decoration: none;
-    color: white;
-    background-color: #e50914;
-    font-weight: 500;
-    border-radius: 3px;
+.watch-on-tv video{
+    width: 390px;
 }
 
-.main #first{
-    padding-top: 15%;
-    font-size: 45px;
-    font-weight: 600;
+.watch-on-tv img{
+    margin-right: 60px;
+    height: 400px;
+    position: relative;
 }
 
-.main #second{
-    font-size: 25px;
-    font-weight: 100;
-}   
-
-.tv{
-    padding-left: 6%;
-    vertical-align: middle;
-    display: flex;
-    margin-top: -15px;
-    height: 75vh;
-    background-color: black;
-    color: white;
+.phone-image{
+    position: relative;
+    margin-bottom: 100px;
 }
 
-.tv .left .first{
-    margin-top: 100px;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.tv .left .second{
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.tv .right{
-    padding-left: 100px;
-}
-
-
-
-.download{
-    padding-left: 6%;
-    vertical-align: middle;
-    display: flex;
-    margin-top: -15px;
-    height: 75vh;
-    background-color: black;
-    color: white;
-}
-
-.download .right .first{
-    margin-top: 100px;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.download .right .second{
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.download .right{
-    padding-left: 200px;
-}
-
-.download .left img{
-    padding-left: 30px;
-    padding-top: 70px;
-    width: 325px;
-}
-
-.watch{
-    padding-left: 6%;
-    vertical-align: middle;
-    display: flex;
-    margin-top: -15px;
-    height: 75vh;
-    background-color: black;
-    color: white;
-}
-
-.watch .left .first{
-    margin-top: 100px;
-    font-size: 50px;
-    font-weight: 600;
-}
-
-.watch .left .second{
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.watch .right img{
+.phone-image #phone{
     width: 500px;
 }
 
-.watch .right{
+.download-screen{
+    display: flex;
+    border-bottom: 7px solid #333;
+}
+
+
+.download .content{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.download{
+    position: absolute;
+    left : 85px;
+    bottom : 10px;
+    display: flex;
+    width: 320px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: black;
+    
+}
+
+.download #img{
+    padding: 10px 10px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.download #gif{
+    margin-left: 45px;
+    padding-top: 25px;
+    height: 50px;
+}
+
+.download .content{
     padding-top: 30px;
-    padding-left: 100px;
+}
+
+.download .content span{
+    font-weight: 600;
+}
+
+.download .content a{
+    color: blue;
+}
+
+
+.download-screen .content-right h1{
+    font-size: 50px;
+}
+
+.download-screen .content-right{
+    width: 550px;
+    margin-left: 100px;
+    margin-top:100px ;
+}
+
+.watch-everywhere{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 7px solid #333;
+}
+
+.watch-everywhere .left{
+    margin-top: 100px;
+    width: 500px;
+}
+
+.watch-everywhere .screen{
+    position: relative;
+}
+
+.watch-everywhere .screen img{
+    padding-top: 40px;
+    margin-right: 100px;
+    width: 500px;
+}
+
+.watch-everywhere video{
+    width: 305px;
+    right: 165px;
+    top: 70px;
+    position: absolute;
 }
 
 .children{
-    padding-left: 6%;
-    vertical-align: middle;
     display: flex;
-    margin-top: -15px;
-    height: 75vh;
-    background-color: black;
-    color: white;
+    padding-bottom: 50px;
+    border-bottom: 7px solid #333;
 }
 
-.children .right .first{
-    margin-top: 100px;
+.children img{
+    padding-top: 40px;
+    padding-left: 80px;
+    height: 350px;
+}
+
+.children .content-right{
+    margin-left: 100px;
+    width: 550px;
+}
+
+.children h1{
     font-size: 50px;
-    font-weight: 600;
+    padding-top: 100px;
 }
 
-.children .right .second{
-    font-size: 25px;
-    font-weight: 400;
+.end{
+    padding-bottom: 80px;
+    border-bottom: 7px solid #333;
 }
 
-.children .right{
-    padding-left: 100px;
+.end h1{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 50px;
 }
 
-.children .left img{
+.button-list{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 815px;
+    margin-bottom: 80px;
+
+}
+
+.button-list button{
+    cursor: pointer;
+    text-align: start;
     padding-left: 30px;
-    padding-top: 70px;
-    width: 425px;
-}
-
-.mainfaq{
-    margin-top: -15px;
-    padding: 10px;
-    background-color: black;
-}
-
-.faq{
-    padding-left: 220px;
-}
-
-.faq .questions{
-    padding-top: 30px;
-    padding-left: 30px;
-    height: 50px;
-    width: 60vw;
+    font-size: 30px;
     color: white;
     background-color: #303030;
-    margin-bottom: 10px;
+    height: 75px;
+    margin-bottom: 5px;
 }
 
-#faq{
-    text-align: center;
+footer{
+    color: gray;
+    padding-bottom: 20px;
+    margin-left: 200px;
+}
+
+table td{
+    padding-bottom: 15px;
+}
+
+table td a{
+    margin-right: 100px;
+    font-size: 14px;
+}
+
+.language-selector-footer select{
+    padding-left: 10px;
     color: white;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.mainfaq p{
-    padding-top: 30px;
-    text-align: center;
-}
-
-.mainfaq .email{
-    padding-bottom: 50px;
-}
-
-.footer{
-    padding: 80px 120px;
-    margin: -15px;
-    background-color: black;
-}
-
-.footer .call{
-    padding-left:50px;
-    padding-bottom:20px ;
-    font-size: 14px;
-    color: #737373;
-}
-
-.footer .call a{
-    text-decoration: none;
-    color: #737373;
-}
-
-.footer table a{
-    font-size: 13px;
-    text-decoration: none;
-    color: #737373;    
-}
-
-.footer table td{
-   padding: 10px 50px;
-}
-
-.footer .lang{
-    padding: 20px 50px;
-}
-
-.footer select{
-    height: 38px;
-    width: 100px;
-    text-align: center;   
     background-color: transparent;
-    color: #737373;
-    border-radius: 3px;
-    border-color: #737373;
-    
+    height: 36px;
+    width: 85px;
+    border : none;
+    outline: none;
 }
-.footer option{
+
+.language-selector-footer{
+    margin-top: 20px;
+    display: flex;
+    border: 1px solid white;
+    height: 56px;
+    width: 130px;
+    border-radius: 2px;
+    align-items: center;
+}
+
+.language-selector-footer option{
     background-color: black;
 }
 
-.footer p{
-    padding-left: 50px;
+footer #first{
+    margin-top: 80px;
+    margin-bottom: 40px;
     font-size: 14px;
-    color: #737373;
+}
+
+footer #last{
+    margin-top: 30px;
+    font-size: 14px;
 }
